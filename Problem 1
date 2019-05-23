@@ -1,0 +1,60 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int a, b, c,d;
+	char cont;
+	cout << "MENU:\n";
+	cout << "1. Add\n";
+	cout << "2. Subtract\n";
+	cout << "3. Multiply\n";
+	cout << "4. Divide\n";
+	cout << "5. Modulus\n";
+	do
+	{
+		cout << "Enter your choice: ";
+		cin >> a;
+		cout << "Enter two numbers: ";
+		cin >> b >> c;
+
+		if (a == 1)
+		{
+			d = b + c;
+			cout << "Result: " << d;
+		}
+		else if (a == 2)
+		{
+			d = b - c;
+			cout << "Result: " << d;
+		}
+		else if (a == 3)
+		{
+			d = b * c;
+			cout << "Result: " << d;
+		}
+		else if (a == 4)
+		{
+			d = b / c;
+			cout << "Result: " << d;
+		}
+		else if (a == 5)
+		{
+			d = b % c;
+			cout << "Result: " << d;
+		}
+		else
+		{
+			cout << "Invalid operator";
+		}
+		cout << "\nContinue? (y or n): ";
+		cin >> cont;
+	} 
+	while (cont == 'y'|| cont=='Y');
+		
+	
+
+
+	_getch();
+	return 0;
+}
